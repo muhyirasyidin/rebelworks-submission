@@ -1,0 +1,99 @@
+.detail {
+  &_cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    /* Add the blur effect */
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &_content {
+    height: 100vh;
+    width: 95vw;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 20;
+    right: 1;
+
+    &_container {
+      width: 1000px !important;
+      background-color: red !important;
+      position: absolute;
+      z-index: 5;
+
+      &_header {
+        font-size: 72px;
+        color: #FFF;
+        margin-left: 200px;
+        font-weight: bolder;
+        position: absolute;
+        line-height: 50vh;
+      }
+  
+      &_year {
+        font-size: 48px;
+        color: #FFF;
+        margin-left: 200px;
+        font-weight: bolder;
+        position: absolute;
+        margin-top: 10rem;
+      }
+  
+      &_description {
+        font-size: 28px;
+        color: #FFF;
+        margin-left: 200px;
+        font-weight: bolder;
+        position: absolute;
+        margin-top: 350px;
+      }
+
+      &_related {
+        width: 90%;
+        position: absolute;
+        margin-left: 200px;
+        margin-top: 700px;
+        overflow-x: scroll;
+        white-space: nowrap;
+        background-size: cover;
+
+        &_description {
+          color: #FFF;
+          font-weight: bolder;
+        }
+
+        &_card {
+          height: 150px;
+          width: 300px;
+          background-color: rgba(255, 255, 255, 0.4);
+          margin: 10px;
+          border-radius: 25px;
+          display: inline-block;
+          cursor: pointer;
+
+          &_title {
+            color: #FFF;
+            margin: 20px;
+          }
+        }
+      }
+    }
+
+    &_poster {
+      position: absolute;
+      z-index: 3;
+      margin-top: 50px;
+      right: 0;
+      height: 90vh;
+    }
+  }
+}

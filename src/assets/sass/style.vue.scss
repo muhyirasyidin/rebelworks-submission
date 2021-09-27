@@ -1,0 +1,18 @@
+// init component
+@import "./components/movie-card.scss",
+        "./components/movie-footer.scss",
+        "./components/detail.scss";
+
+.height-100 {
+  height: auto;
+  min-height: 100vh;
+  background-color: rgb(45, 37, 39);
+  padding: 50px;
+}
+
+.header {
+  font-size: 72px;
+  color: #FFF;
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
